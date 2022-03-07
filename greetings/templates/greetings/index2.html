@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <style type="text/css">
+    #card {
+    border-radius: 30px;
+    }
+    h1 {
+    text-align: center;
+    }
+     h2 {
+    text-align: center;
+    }
+    </style>
+</head>
+<body>
+<div class="container m-5">
+    <div class="row">
+        <div class="col-5"></div>
+        <div class="col-5">
+            <form action="" method="GET">
+                <div id='card' class="card border-primary border-4 p-3 ">
+                    <h1>{{ name }}</h1>
+                    <h2>{{ message }}</h2>
+                    <input name="name" class="orm-control my-3" type="text" placeholder="Enter your name">
+                    <input name="message" class="orm-control mb-3" type="text" placeholder="Enter your message">
+                    <input class="btn btn-outline-primary btn-lg" type="submit"  value="Let's go!">
+                </div>
+            </form>
+        </div>
+        <div class="col-2"></div>
+    </div>
+</div>
+</body>
