@@ -7,4 +7,4 @@ def index_view(request):
         context = {'name': "Hello, {}!".format(request.GET['name']), 'message': request.GET['message']}
         return render(request, 'greetings/index2.html', context=context)
     else:
-        return redirect('http://127.0.0.1:8000?name=Rekruto&message=Давай+дружить!')
+        return redirect('https://rekruto-test.herokuapp.com/?name=Rekruto&message=Давай+дружить!')
